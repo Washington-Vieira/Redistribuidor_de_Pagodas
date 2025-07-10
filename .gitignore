@@ -19,7 +19,6 @@ __pycache__/
 # Arquivos de cache do Jupyter/Streamlit
 .ipynb_checkpoints/
 .cache/
-.streamlit/config.toml
 
 # Arquivos de Excel de entrada/saída (se não quiser versionar)
 entrada.xlsx

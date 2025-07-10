@@ -114,7 +114,7 @@ def processar_pagodas(df_original, limite_por_grupo=36, limites_excecao=None):
 # --- STREAMLIT APP ---
 def main():
     st.title('Redistribuidor de Pagodas (com exceções por grupo)')
-    st.write('Faça upload do arquivo Excel do YMS com as colunas Semiacabado e Pagoda. O sistema irá redistribuir para no máximo 36 por grupo, exceto grupos definidos como exceção.')
+    st.write('Faça upload do arquivo Excel do YMS com as colunas Semiacabado e Pagoda. O sistema irá redistribuir para no máximo 36 por grupo, exceto Pagodas definidos como exceção.')
     uploaded_file = st.file_uploader('Selecione o arquivo Excel', type=['xlsx'])
     limite_padrao = st.number_input('Limite padrão por grupo', min_value=1, max_value=100, value=36)
     st.write('Exceções (ex: PG07=30, PGS03=28)')

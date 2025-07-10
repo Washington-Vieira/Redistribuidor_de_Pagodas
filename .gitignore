@@ -1,0 +1,33 @@
+# Ambientes virtuais
+.venv/
+venv/
+env/
+ENV/
+
+# Arquivos temporários do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Arquivos temporários do sistema
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Arquivos de cache do Jupyter/Streamlit
+.ipynb_checkpoints/
+.cache/
+.streamlit/config.toml
+
+# Arquivos de Excel de entrada/saída (se não quiser versionar)
+entrada.xlsx
+saida_pagodas.xlsx
+MOTOR HJF*.xlsx
+
+# Outros arquivos que não devem ir para o repositório
+app2.py
+app_alteração.py
+.app.py
+app.py

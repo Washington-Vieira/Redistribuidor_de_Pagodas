@@ -20,7 +20,7 @@ def comparar_planilhas_diferencas(df_pagodas, df_template):
         projeto = df_template.loc[df_template['Semiacabado'].astype(str) == semi, 'Projeto'].values[0]
         resultado.append({'Semiacabado': semi, 'Projeto': projeto, 'Ausente em': 'YMS'})
     for semi in so_no_pagodas:
-        resultado.append({'Semiacabado': semi, 'Projeto': '', 'Ausente em': 'Obsoleto'})
+        resultado.append({'Semiacabado': semi, 'Projeto': '', 'Ausente em': 'Verificar se pode ser Obsoleto'})
     return pd.DataFrame(resultado, columns=['Semiacabado', 'Projeto', 'Ausente em'])
 
 def main():
